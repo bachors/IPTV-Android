@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="p8">8dp</dimen>
+    <dimen name="p12">12dp</dimen>
+    <dimen name="p16">16dp</dimen>
+    <dimen name="p56">56dp</dimen>
+</resources>

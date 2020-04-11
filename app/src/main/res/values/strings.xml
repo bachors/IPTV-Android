@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IPTV</string>
+    <string name="app_v">Developed by Bachors</string>
+
+    <string name="playlist">Playlist</string>
+
+    <string name="about_us">About</string>
+    <string name="about_des">IPTV Playlist.</string>
+    <string name="rate_this">Rate</string>
+    <string name="share_this">Share</string>
+
+</resources>
