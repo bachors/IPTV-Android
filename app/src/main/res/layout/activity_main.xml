@@ -1,52 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:openDrawer="start">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
-    <android.support.design.widget.CoordinatorLayout
-        android:background="@color/colorPrimary"
+    <LinearLayout
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:id="@+id/iptvorg"
+            android:padding="@dimen/p16"
+            android:background="@drawable/boxshape"
+            android:orientation="horizontal"
+            android:layout_width="200dp"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="120dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/p8"
-                android:src="@drawable/logo"
-                android:contentDescription="@string/app_name" />
-
-            <TextView
+                android:background="@drawable/ic_world"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textSize="24sp"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="@dimen/p8"
-                android:textStyle="bold"
-                android:fontFamily="cursive"
-                android:text="@string/app_name"/>
+                android:contentDescription="@string/iptvorg" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/colorDark"
-                android:layout_marginBottom="@dimen/p16"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-light"
-                android:text="Loading..."/>
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/p16"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="@string/iptvorg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+        <LinearLayout
+            android:id="@+id/m3ufile"
+            android:padding="@dimen/p16"
+            android:background="@drawable/boxshape"
+            android:layout_marginTop="@dimen/p16"
+            android:orientation="horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
 
-</android.support.v4.widget.DrawerLayout>
+            <ImageView
+                android:background="@drawable/ic_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/m3u" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/p16"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="@string/m3u"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favorite"
+            android:padding="@dimen/p16"
+            android:background="@drawable/boxshape"
+            android:layout_marginTop="@dimen/p16"
+            android:orientation="horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/ic_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/favorite" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/p16"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="@string/favorite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

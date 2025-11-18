@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">IPTV</string>
-    <string name="app_v">Developed by Bachors</string>
+    <string name="app_v">by bachors.js.org</string>
 
+    <string name="search">Search…</string>
     <string name="playlist">Playlist</string>
 
-    <string name="about_us">About</string>
-    <string name="about_des">IPTV Playlist.</string>
-    <string name="rate_this">Rate</string>
-    <string name="share_this">Share</string>
+    <string name="iptvorg">IPTV-ORG</string>
+    <string name="m3u">M3U FILE</string>
+    <string name="favorite">FAVORITES</string>
 
 </resources>

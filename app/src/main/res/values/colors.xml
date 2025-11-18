@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ff3461</color>
-    <color name="colorPrimaryDark">#ff3461</color>
-    <color name="colorAccent">#ff5345</color>
-    <color name="textColor">#333333</color>
-    <color name="colorBg">#e5eaee</color>
-    <color name="colorDark">#eeeeee</color>
-    <color name="colorTool">#ff5345</color>
+    <!-- Material 3 Color Tokens -->
+    <color name="md_theme_primary">#BB86FC</color>
+    <color name="md_theme_on_primary">#000000</color>
+    <color name="md_theme_primary_container">#3700B3</color>
+    <color name="md_theme_on_primary_container">#FFFFFF</color>
+    <color name="md_theme_secondary">#03DAC6</color>
+    <color name="md_theme_on_secondary">#000000</color>
+    <color name="md_theme_surface">#121212</color>
+    <color name="md_theme_on_surface">#FFFFFF</color>
+    <color name="md_theme_background">#020202</color>
+    <color name="md_theme_on_background">#FFFFFF</color>
+    
+    <!-- Legacy colors for compatibility -->
+    <color name="colorPrimary">@color/md_theme_primary</color>
+    <color name="colorPrimaryDark">@color/md_theme_primary_container</color>
+    <color name="colorAccent">@color/md_theme_secondary</color>
+    <color name="textColor">@color/md_theme_on_surface</color>
+    <color name="colorBg">@color/md_theme_background</color>
+    <color name="colorList">@color/md_theme_surface</color>
 </resources>
